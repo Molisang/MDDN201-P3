@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+ <!-- Langage: English -->
+<html lang="en">
+
+<head>
+
+    <!-- utf-8 is suitable for all langahes. Chinese: GBK, Traditional Chinese: Big5 -->
+    <meta charset="utf-8">
+
+    <!-- edge: the newest veison of IE-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- It's for responsive design if you want to make the webpage larger or smaller.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Board</title>
+
+    <!-- Load sources -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600">  
+    <!-- Web font -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">                                      
+    <!-- Bootstrap style(https://getbootstrap.com/) -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bot.js"></script>
+  <!--   <script type="text/javascript" src="js/toggle.js"></script> -->
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- logo -->
+
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/bot.css"> 
+<!--     <link rel="stylesheet" href="css/gallery.css">  -->
+    <link rel="stylesheet" href="css/images.css"> 
+
+</head>       
+
+
+
+<body> 
+ 
+                  <!-- Page 1 Gallery One -->
+
+    <!-- Content -->
+    <div class="whole">
+        <!-- Navigation -->        
+        <div class="nav-slide" >
+                <div class="nav-bg">
+                    
+                    <a class="nav-brand text-uppercase" href="index.html"><img id="logo" class="logo" src="img/logo.png" /><div class="title">Inspirations Bar</div></a>
+
+                    <div class="navi">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-cube">
+                                <a class="nav-link" href="index.html" data-no="1">Home <span class="sr-only">(current)</span></a>
+                            </li>                                
+                            <li class="nav-cube active selected">
+                                <a class="nav-link" href="board.html" data-no="2">Board</a>
+                            </li>
+                            
+                            <li class="nav-cube">
+                                <a class="nav-link" href="contact.html" data-no="3">Contact</a>
+                            </li>
+                        </ul>
+                    </div>                        
+                </div>
+        </div> 
+    </div>
+    <section>      
+        <h1>Board for Inspirations</h1>
+
+        <div class="category">
+          <input type="radio" id="select-all" name="button">
+            <label for="select-all" class="label-all">
+              All
+            </label>
+          <input type="radio" id="select-colors" name="button">
+            <label for="select-colors" class="label-colors">
+              Colors
+            </label>
+          <input type="radio" id="select-materials" name="button">
+            <label for="select-materials" class="label-materials">
+              Materials
+            </label>
+          <input type="radio" id="select-textures" name="button">
+            <label for="select-textures" class="label-textures">
+              Textures
+            </label>
+             <input type="radio" id="select-lightShawdow" name="button">
+            <label for="select-lightShawdow" class="label-lightShawdow">
+              Light&shawdow
+            </label>
+        </div>
+
+        <div class="imagesContent">
+          <ul class="gallery">
+            <li class="materials-item">
+               <img class="images" src="img/lamp-641559_1920.jpg" />
+            </li>
+            <li class="colors-item">
+              <img class="images" src="img/japan-744650_1920.jpg" />
+            </li>
+            <li class="colors-item">
+             <img class="images" src="img/asian-food-2090942_1920.jpg" />
+            </li>
+            <li class="lightShawdow-item">
+               <img class="images" src="img/elbe-2894207_1920.jpg" />
+            </li>
+            <li class="materials-item">
+              <img class="images" src="img/chinese-art-1873931_1280.jpg" />
+            </li>
+            <li class="lightShawdow-item">
+              <img class="images" src="img/bamboo-483319_1920.jpg" />
+            </li>
+            <li class="textures-item">
+              <img class="images" src="img/statue-2252626_1920.jpg" />
+            </li>
+            <li class="colors-item">
+              <img class="images" src="img/norway-2128142_1920.jpg" />
+            </li>
+            <li class="materials-item">
+              <img class="images" src="img/berlin-86190_1920.jpg" />
+            </li>
+            <li class="materials-item">
+              <img class="images" src="img/amg-1880381_1920.jpg" />
+            </li>
+            <li class="colors-item">
+              <img class="images" src="img/tram-2209093_1920.jpg" />
+            </li>
+            <li class="lightShawdow-item">
+              <img class="images" src="img/bulb-2287759_1920.jpg" />
+            </li>
+          </ul> 
+      </div>
+
+    </section>
+
+    <!--Bot section, TODO change CSS and add Toggle button-->
+    <div class="Toggle">
+          <img class="ToggleButton" src="img/logo.png" />
+    </div>
+          <div class="bot" id="bot">
+      <div class="chat-output" id="chat-output">
+        <div class="user-message">
+          <div class="message2">Hi! I'm a bot. What's up?</div>
+        </div>
+      </div>
+
+      <div class="chat-input">
+        <form action="#0" id="user-input-form">
+          <input type="text" id="user-input" class="user-input" placeholder="Talk to the bot.">
+        </form>
+      </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="footer-container">                                         
+    <div class="footer-school">Copyright &copy; 2017, Victoria University of Wellington | More information <a href="http://www.victoria.ac.nz/" target="_blank">Victoria University of Wellington</a>
+            <div class="footer-icons-container">
+                <a href="https://www.facebook.com/" class="footer-icon-link"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.google.co.nz/?gfe_rd=cr&dcr=0&ei=9VC-WbD3BM_r8AfBxZnIAw" class="footer-icon-link"><i class="fa fa-google-plus"></i></a>
+                <a href="https://twitter.com/" class="footer-icon-link"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.behance.net/" class="footer-icon-link"><i class="fa fa-behance"></i></a>
+                <a href="https://www.linkedin.com/" class="footer-icon-link"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>  
+    </footer>
+</body>
+
+
+</html>
+                    
+
+

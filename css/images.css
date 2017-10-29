@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+.category{
+  text-align: center;
+}
+
+.imagesContent{
+  text-align: center;
+}
+
+ul {
+    padding:10px;
+}
+
+ul.gallery li {
+  display: inline-block;
+  opacity:1;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+
+}
+
+
+label {
+  font: 14px/1 'Open Sans', sans-serif;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  background: #5D6B74;
+  padding: 5px 19px;
+  opacity: 0.6;
+}
+label:hover{
+  opacity: 1;
+}
+label:active{
+  opacity: 1;
+}
+
+
+#select-all,#select-colors,#select-materials,#select-textures,#select-lightShawdow {
+  display: none;
+}
+
+.images {
+  margin-top: 5px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 50%;
+  opacity: 1;
+
+}
+
+.images:hover{
+  transform:scale(1.5,1.5);
+  transition: .3s transform;
+
+}
+
+/*Select Categorie*/	
+/*.category input#select-animals:checked~ .imagesContent.gallery li:not(.animals-item), 
+.category input#select-lightning:checked~ .imagesContent.gallery li:not(.lightning-item), 
+.category input#select-desert:checked~ .imagesContent.gallery li:not(.desert-item) {
+  opacity: 0.1;
+}*/
