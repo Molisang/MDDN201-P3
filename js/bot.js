@@ -230,7 +230,7 @@ $('.ToggleButton').click(function() {
 $('.label-all').click(function(){
 	$('.colors-item').show(500);
 	$('.textures-item').show(500);
-	$('.textures-item').show(500);	
+	$('.materials-item').show(500);	
 	$('.lightShawdow-item').show(500);
 })
 $('.label-colors').click(function(){
